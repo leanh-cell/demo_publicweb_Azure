@@ -8,6 +8,14 @@ module.exports = async function (context, req) {
 
     context.res = {
         // status: 200, /* Defaults to 200 */
+        // swa start src --api-location api
+
         body: responseMessage
     };
 }
+
+module.exports = async function(context, req){
+    context.res.json({
+        text: "hello from the API"
+    });
+};
